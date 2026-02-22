@@ -1,32 +1,32 @@
-// import { Routes, Route } from 'react-router-dom';
-// import Home from './pages/Home';
-// import Watch from './pages/Watch';
-// import Header from './components/Header';
-// import Search from './pages/Search';
-
-// export default function App() {
-//     return (
-//         <>
-//             <Header />
-//             <Routes>
-//                 <Route path="/" element={<Home />} />
-//                 <Route path="/search" element={<Search />} />
-//                 <Route path="/watch/:id" element={<Watch />} />
-//             </Routes>
-//         </>
-//     );
-// }
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import VideoPage from './pages/VideoPage';
+import Watch from './pages/Watch';
+import Header from './components/Header';
+import Search from './pages/Search';
 
 export default function App() {
     return (
-        <HashRouter>
+        <>
+            <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/video/:id" element={<VideoPage />} />
+                <Route path="/search" element={<Search />} />
+                <Route path="/watch/:id" element={<Watch />} />
             </Routes>
-        </HashRouter>
+        </>
     );
 }
+// import { HashRouter, Routes, Route } from 'react-router-dom';
+// import Home from './pages/Home';
+// import VideoPage from './pages/VideoPage';
+
+// export default function App() {
+//     return (
+//         <HashRouter>
+//             <Routes>
+//                 <Route path="/" element={<Home />} />
+//                 <Route path="/video/:id" element={<VideoPage />} />
+//             </Routes>
+//         </HashRouter>
+//     );
+// }
