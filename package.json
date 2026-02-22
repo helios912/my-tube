@@ -3,7 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
-    "homepage": "https://<username>.github.io/<repo>/",
+    "homepage": "https://helios912.github.io/my-tube/",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
@@ -29,5 +29,8 @@
         "eslint-plugin-react-refresh": "^0.4.24",
         "globals": "^16.5.0",
         "vite": "^7.3.1"
+    },
+    "devDependencies": {
+        "gh-pages": "^6.3.0"
     }
 }
